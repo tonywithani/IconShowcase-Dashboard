@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 Jahir Fiquitiva
+ * Copyright (c) 2017 Jahir Fiquitiva
  *
  * Licensed under the CreativeCommons Attribution-ShareAlike
  * 4.0 International License. You may not use this file except in compliance
@@ -19,98 +19,63 @@
 
 package jahirfiquitiva.apps.iconshowcase.sampleip;
 
-import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
-import jahirfiquitiva.iconshowcase.utilities.LauncherIntents;
-import jahirfiquitiva.iconshowcase.utilities.utils.NotificationUtils;
-import jahirfiquitiva.iconshowcase.utilities.utils.Utils;
-import timber.log.Timber;
+import jahirfiquitiva.iconshowcase.activities.base.LaunchActivity;
 
-public class HomeActivity extends AppCompatActivity {
-
-    private static final boolean
-            ENABLE_DONATIONS = false,
-
-    ENABLE_GOOGLE_DONATIONS = false,
-            ENABLE_PAYPAL_DONATIONS = false,
-            ENABLE_FLATTR_DONATIONS = false,
-            ENABLE_BITCOIN_DONATIONS = false,
-
-    ENABLE_LICENSE_CHECK = false,
-            ENABLE_AMAZON_INSTALLS = false;
-
-    private static final String GOOGLE_PUBLISHER_KEY = "insert_key_here";
+public class HomeActivity extends LaunchActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Class service = FirebaseService.class;
-        if (NotificationUtils.hasNotificationExtraKey(this, getIntent(), "open_link", service)) {
-            Utils.openLink(this, getIntent().getStringExtra("open_link"));
-        } else {
-            if ((getIntent().getDataString() != null && getIntent().getDataString().equals
-                    ("apply_shortcut"))
-                    && (Utils.getDefaultLauncherPackage(this) != null)) {
-                try {
-                    new LauncherIntents(this, Utils.getDefaultLauncherPackage(this));
-                } catch (IllegalArgumentException ex) {
-                    runIntent(service);
-                }
-            } else {
-                runIntent(service);
-            }
-        }
-        finish();
     }
 
-    private void runIntent(Class service) {
-        Intent intent = new Intent(HomeActivity.this, jahirfiquitiva.iconshowcase.activities
-                .ShowcaseActivity.class);
-
-        intent.putExtra("open_wallpapers",
-                NotificationUtils.isNotificationExtraKeyTrue(this, getIntent(), "open_walls",
-                        service));
-
-        intent.putExtra("installer", getAppInstaller());
-
-        intent.putExtra("curVersionCode", getAppCurrentVersionCode());
-
-        intent.putExtra("enableDonations", ENABLE_DONATIONS);
-        intent.putExtra("enableGoogleDonations", ENABLE_GOOGLE_DONATIONS);
-        intent.putExtra("enablePayPalDonations", ENABLE_PAYPAL_DONATIONS);
-        intent.putExtra("enableFlattrDonations", ENABLE_FLATTR_DONATIONS);
-        intent.putExtra("enableBitcoinDonations", ENABLE_BITCOIN_DONATIONS);
-
-        //noinspection PointlessBooleanExpression
-        intent.putExtra("enableLicenseCheck", (ENABLE_LICENSE_CHECK && !BuildConfig.DEBUG));
-        intent.putExtra("enableAmazonInstalls", ENABLE_AMAZON_INSTALLS);
-
-        intent.putExtra("googlePubKey", GOOGLE_PUBLISHER_KEY);
-
-        if (getIntent().getDataString() != null && getIntent().getDataString().contains
-                ("_shortcut")) {
-            intent.putExtra("shortcut", getIntent().getDataString());
-        }
-
-        startActivity(intent);
+    @Override
+    protected Class getFirebaseClass() {
+        return FirebaseService.class;
     }
 
-    private String getAppInstaller() {
-        return getPackageManager().getInstallerPackageName(getPackageName());
+    @Override
+    protected boolean enableDonations() {
+        return false;
     }
 
-    private int getAppCurrentVersionCode() {
-        try {
-            PackageInfo packageInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
-            return packageInfo.versionCode;
-        } catch (PackageManager.NameNotFoundException e) {
-            Timber.d("Unable to get version code. Reason:", e.getLocalizedMessage());
-            return -1;
-        }
+    @Override
+    protected boolean enableGoogleDonations() {
+        return false;
+    }
+
+    @Override
+    protected boolean enablePayPalDonations() {
+        return false;
+    }
+
+    @Override
+    protected boolean enableLicCheck() {
+        // TODO: Make sure you set this to true if you want to check license.
+        return !BuildConfig.DEBUG;
+    }
+
+    @Override
+    protected boolean enableAmazonInstalls() {
+        return false;
+    }
+
+    @Override
+    protected boolean checkLPF() {
+        // Check if LuckyPatcher or Freedom is installed
+        return true;
+    }
+
+    @Override
+    protected boolean checkStores() {
+        // Check for third-party stores (like Aptoide, Blackmart, Mobogenie and others)
+        return true;
+    }
+
+    @Override
+    protected String licKey() {
+        return "insert_key_here";
     }
 
 }

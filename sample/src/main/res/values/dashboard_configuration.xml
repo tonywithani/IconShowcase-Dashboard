@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright (c) 2016 Jahir Fiquitiva
+  ~ Copyright (c) 2017 Jahir Fiquitiva
   ~
   ~ Licensed under the CreativeCommons Attribution-ShareAlike
   ~ 4.0 International License. You may not use this file except in compliance
@@ -18,7 +18,7 @@
   ~ 	https://github.com/jahirfiquitiva/IconShowcase#special-thanks
   -->
 
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
     <!-- Option to enable Log messages-->
     <bool name="debugging">true</bool>
@@ -112,6 +112,14 @@
     -->
     <bool name="enable_user_wallpaper_in_toolbar">true</bool>
 
+    <!-- Set a drawable name in case you want to use a static picture in toolbar.
+        Leave empty if you don't want to use a static one. -->
+    <string name="toolbar_picture"></string>
+
+    <!-- Change to set a custom amount in case you think the app is counting icons wrong.
+        Leave as -1 if you still want the app to count them. -->
+    <integer name="icons_amount">-1</integer>
+
     <!--
     Do you want to hide "Icon Pack in numbers" section?
     True, means yes.
@@ -134,6 +142,12 @@
 
 
     <!--  /*/*/*/*/*/*/*/*/*/*/*/*/ ICONS/PREVIEWS SECTION CONFIGURATION /*/*/*/*/*/*/*/*/*/*/*/*/ -->
+
+    <!-- Show button in changelog to check new icons?
+        True, means yes.
+        False, means no.
+        -->
+    <bool name="show_check_new_icons_button">true</bool>
 
     <!-- Do you want icons be sorted alphabetically and organized automatically, removing duplicates too?
     True, means yes.
@@ -193,23 +207,23 @@
     <!--
     1. Set the max amount of apps to request.
     2. Limit requests to 1 every X minutes.
-
     Replace X with the number of minutes you want.
     60 means 1 request every 1 hour.
     1440 means 1 request per day.
     10080 means 1 request per week.
     40320 means 1 request per month.
 
-    If the second is set to 0, users will be able to request as many times they want,
-    with the max apps limit.
-
+    App Limit:
     If the apps limit is 0, users won't be able to request anything.
-
     If the apps limit is -1, users can request as many times they want, and
     as many apps they want.
+
+    Time limit:
+    If the time limit is set to 0 or less, users will be able to request as many times they want,
+    with the max apps limit.
     -->
     <integer name="max_apps_to_request">-1</integer>
-    <integer name="limit_request_to_x_minutes">-1</integer>
+    <integer name="time_limit_in_minutes">0</integer>
 
 
     <!-- /*/*/*/*/*/*/*/*/*/*/*/*/ FAQS SECTION CONFIGURATION /*/*/*/*/*/*/*/*/*/*/*/*/ -->

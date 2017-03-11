@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 Jahir Fiquitiva
+ * Copyright (c) 2017 Jahir Fiquitiva
  *
  * Licensed under the CreativeCommons Attribution-ShareAlike
  * 4.0 International License. You may not use this file except in compliance
@@ -19,17 +19,11 @@
 
 apply plugin: 'com.android.application'
 
-repositories {
-    maven { url "https://jitpack.io" }
-}
-
 ext {
     TARGET_SDK = 25
-    BUILD_TOOLS = "25.0.1"
-    ANDROID_SUPPORT_LIBS = "25.0.1"
-    VERSIONCODE = 1973
-    VERSIONNAME = "1.9.7.3"
-    APP_TAG = "IconShowcaseSample"
+    BUILD_TOOLS = "25.0.2"
+    ANDROID_SUPPORT_LIBS = "25.2.0"
+    APP_TAG = "IS-IconPack"
 }
 
 android {
@@ -45,14 +39,15 @@ android {
 
     lintOptions {
         abortOnError false
+        disable 'MissingTranslation'
     }
 
     defaultConfig {
         applicationId "jahirfiquitiva.apps.iconshowcase.sampleip"
         minSdkVersion 16
         targetSdkVersion TARGET_SDK
-        versionCode VERSIONCODE
-        versionName VERSIONNAME
+        versionCode 1975
+        versionName "1.9.7.5"
         vectorDrawables.useSupportLibrary = true
     }
 
@@ -74,9 +69,11 @@ android {
 
     buildTypes {
         release {
+            debuggable false
+            zipAlignEnabled true
             minifyEnabled true
             shrinkResources false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         aaptOptions {
             noCompress 'zip', 'komp', 'klwp', 'kwgt', 'klck', 'kwch'
@@ -89,10 +86,10 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     //Main library
-    compile 'com.github.jahirfiquitiva:IconShowcase:1.9.7.4'
+    compile 'me.jahirfiquitiva:IconShowcase:d768b55'
 	
     //Firebase Notifications
-    compile 'com.google.firebase:firebase-messaging:9.8.0'
+    compile 'com.google.firebase:firebase-messaging:10.2.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

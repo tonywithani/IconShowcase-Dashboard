@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-  ~ Copyright (c) 2016 Jahir Fiquitiva
+  ~ Copyright (c) 2017 Jahir Fiquitiva
   ~
   ~ Licensed under the CreativeCommons Attribution-ShareAlike
   ~ 4.0 International License. You may not use this file except in compliance
@@ -19,7 +19,7 @@
   ~ 	https://github.com/jahirfiquitiva/IconShowcase#special-thanks
   -->
 
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
     <string-array name="credits_banners" formatted="false" tools:ignore="TypographyDashes">
         <item>https://lh5.googleusercontent.com/-eAPognoXTwE/UYFKq101UyI/AAAAAAAABiY/REl1Ei8txP8/w1600-h900/default_cover_5_ff9ff46d48dc181084c9c23a120b68d8.jpg</item>
