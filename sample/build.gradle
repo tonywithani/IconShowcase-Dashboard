@@ -86,7 +86,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     //Main library
-    compile 'me.jahirfiquitiva:IconShowcase:d768b55'
+    compile 'me.jahirfiquitiva:IconShowcase:f7eeed3'
 	
     //Firebase Notifications
     compile 'com.google.firebase:firebase-messaging:10.2.0'
