@@ -35,6 +35,9 @@ public class HomeActivity extends LaunchActivity {
         return FirebaseService.class;
     }
 
+
+    // TODO: Configure the things below to return 'true' or 'false' according to your needs.
+
     @Override
     protected boolean enableDonations() {
         return false;
@@ -73,6 +76,7 @@ public class HomeActivity extends LaunchActivity {
         return true;
     }
 
+    // TODO: Put your license key here.
     @Override
     protected String licKey() {
         return "insert_key_here";
