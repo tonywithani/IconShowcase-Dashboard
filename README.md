@@ -9,6 +9,7 @@
 <p align="center">
 	<a target="_blank" href="https://github.com/jahirfiquitiva/IconShowcase/releases/tag/1.9.7.4"><img src="https://img.shields.io/badge/version-1.9.7.4-00C853.svg"></a>
 	<a href="https://www.codacy.com/app/jahirfiquitiva/IconShowcase-Dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jahirfiquitiva/IconShowcase-Dashboard&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/86c5f4fb66bf4c75a567f9e61d7206b0"/></a>
+	<a target="_blank" href="https://travis-ci.org/jahirfiquitiva/IconShowcase-Dashboard/builds" title="Travis Builds"><img src="https://travis-ci.org/jahirfiquitiva/IconShowcase-Dashboard.svg?branch=master" /></a>
 	<a target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/legalcode"><img src="https://img.shields.io/badge/license-CC%20BY%20SA-01579B.svg"></a>
 	<img src="https://img.shields.io/badge/API-16%2B-7ac143.svg">
 </p>
