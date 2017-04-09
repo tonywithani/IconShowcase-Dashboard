@@ -22,7 +22,7 @@ apply plugin: 'com.android.application'
 ext {
     TARGET_SDK = 25
     BUILD_TOOLS = "25.0.2"
-    ANDROID_SUPPORT_LIBS = "25.2.0"
+    ANDROID_SUPPORT_LIBS = "25.3.0"
     APP_TAG = "IS-IconPack"
 }
 
@@ -43,7 +43,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "jahirfiquitiva.apps.iconshowcase.sampleip"
+        applicationId "jahirfiquitiva.apps.iconshowcase.demo"
         minSdkVersion 16
         targetSdkVersion TARGET_SDK
         versionCode 1975
@@ -86,10 +86,12 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     //Main library
-    compile 'me.jahirfiquitiva:IconShowcase:f7eeed3'
+    compile 'me.jahirfiquitiva:IconShowcase:11ce5ff'
 	
     //Firebase Notifications
-    compile 'com.google.firebase:firebase-messaging:10.2.0'
+    // TODO: Remove comment marks if you want to implement Firebase Notifications
+    // compile 'com.google.firebase:firebase-messaging:10.2.0'
 }
 
-apply plugin: 'com.google.gms.google-services'
+// TODO: Remove comment marks if you want to implement Firebase Notifications
+// apply plugin: 'com.google.gms.google-services'

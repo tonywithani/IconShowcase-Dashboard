@@ -17,7 +17,7 @@
  * 	https://github.com/jahirfiquitiva/IconShowcase#special-thanks
  */
 
-package jahirfiquitiva.apps.iconshowcase.sampleip;
+package jahirfiquitiva.apps.iconshowcase.demo;
 
 import android.os.Bundle;
 
@@ -34,9 +34,6 @@ public class HomeActivity extends LaunchActivity {
     protected Class getFirebaseClass() {
         return FirebaseService.class;
     }
-
-
-    // TODO: Configure the things below to return 'true' or 'false' according to your needs.
 
     @Override
     protected boolean enableDonations() {
@@ -66,7 +63,7 @@ public class HomeActivity extends LaunchActivity {
 
     @Override
     protected boolean checkLPF() {
-        // Check if LuckyPatcher or Freedom is installed
+        // Check if LuckyPatcher, Uret Patcher, Freedom or CreeHack is installed
         return true;
     }
 
@@ -76,7 +73,6 @@ public class HomeActivity extends LaunchActivity {
         return true;
     }
 
-    // TODO: Put your license key here.
     @Override
     protected String licKey() {
         return "insert_key_here";
