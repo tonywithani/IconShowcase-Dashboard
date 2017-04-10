@@ -50,7 +50,7 @@ local.properties
 #############################################################################
 
 # Built application files
-#*.ap_
+*.ap_
 
 # Generated files
 gen/
