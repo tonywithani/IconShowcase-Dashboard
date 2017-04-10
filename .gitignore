@@ -51,6 +51,8 @@ local.properties
 
 # Built application files
 *.ap_
+.apk
+*.apk
 
 # Generated files
 gen/
