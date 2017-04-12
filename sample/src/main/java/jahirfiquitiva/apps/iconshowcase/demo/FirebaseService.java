@@ -20,6 +20,11 @@
 package jahirfiquitiva.apps.iconshowcase.demo;
 
 // TODO: Remove comment marks if you want to implement Firebase Notifications
+// import com.google.firebase.messaging.FirebaseMessagingService;
+// import com.google.firebase.messaging.RemoteMessage;
+// import jahirfiquitiva.iconshowcase.utilities.utils.NotificationUtils;
+
+// TODO: Remove comment marks if you want to implement Firebase Notifications
 public class FirebaseService { /* extends FirebaseMessagingService {
 
     @Override
