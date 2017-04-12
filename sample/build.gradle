@@ -46,8 +46,8 @@ android {
         applicationId "jahirfiquitiva.apps.iconshowcase.demo"
         minSdkVersion 16
         targetSdkVersion TARGET_SDK
-        versionCode 1972
-        versionName "1.9.7.2"
+        versionCode 1975
+        versionName "1.9.7.5"
         vectorDrawables.useSupportLibrary = true
     }
 
@@ -86,7 +86,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     // Main library
-    compile 'me.jahirfiquitiva:IconShowcase:799d848'
+    compile 'me.jahirfiquitiva:IconShowcase:1.9.7.5'
 	
     // Firebase Notifications
     // TODO: Remove comment marks if you want to implement Firebase Notifications

@@ -75,6 +75,8 @@ public class HomeActivity extends LaunchActivity {
 
     @Override
     protected String licKey() {
+        // TODO: Make sure you add your key when enabling license check, otherwise, it may lead ...
+        // TODO: ... to app crashes and errors.
         return "insert_key_here";
     }
 

@@ -25,7 +25,7 @@
 <br>
 
 <p align="center">
-	<a target="_blank" href='https://play.google.com/store/apps/details?id=jahirfiquitiva.apps.iconshowcase.sampleip'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width='240'/></a>
+	<a target="_blank" href='https://play.google.com/store/apps/details?id=jahirfiquitiva.apps.iconshowcase.demo'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width='240'/></a>
 </p>
 
 # Previews
@@ -40,8 +40,6 @@
 <img src="https://raw.githubusercontent.com/jahirfiquitiva/IconShowcase/master/art/7.png" width="400">
 <img src="https://raw.githubusercontent.com/jahirfiquitiva/IconShowcase/master/art/8.png" width="400">
 <img src="https://raw.githubusercontent.com/jahirfiquitiva/IconShowcase/master/art/9.png" width="400">
-<img src="https://raw.githubusercontent.com/jahirfiquitiva/IconShowcase/master/art/10.png" width="400">
-<img src="https://raw.githubusercontent.com/jahirfiquitiva/IconShowcase/master/art/11.png" width="400">
 </p>
 
 # How to Implement?
