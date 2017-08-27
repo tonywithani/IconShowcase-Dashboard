@@ -20,9 +20,9 @@
 apply plugin: 'com.android.application'
 
 ext {
-    TARGET_SDK = 25
-    BUILD_TOOLS = "25.0.2"
-    ANDROID_SUPPORT_LIBS = "25.3.1"
+    TARGET_SDK = 26
+    BUILD_TOOLS = "26.0.1"
+    ANDROID_SUPPORT_LIBS = "26.0.1"
     APP_TAG = "IS-IconPack"
 }
 
@@ -46,8 +46,8 @@ android {
         applicationId "jahirfiquitiva.apps.iconshowcase.demo"
         minSdkVersion 16
         targetSdkVersion TARGET_SDK
-        versionCode 1978
-        versionName "1.9.7.8"
+        versionCode 1980
+        versionName "1.9.8.0"
         vectorDrawables.useSupportLibrary = true
     }
 
@@ -86,11 +86,11 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     // Main library
-    compile 'me.jahirfiquitiva:IconShowcase:1.9.7.8'
+    compile 'me.jahirfiquitiva:IconShowcase:1.9.8.0'
 	
     // Firebase Notifications
     // TODO: Remove comment marks if you want to implement Firebase Notifications
-    // compile 'com.google.firebase:firebase-messaging:10.2.0'
+    // compile 'com.google.firebase:firebase-messaging:10.2.6'
 }
 
 // TODO: Remove comment marks if you want to implement Firebase Notifications
