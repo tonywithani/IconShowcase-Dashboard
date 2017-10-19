@@ -1,4 +1,4 @@
-<h1 align="center">IconShowcase !!!</h1>
+<h1 align="center">IconShowcase!</h1>
 
 <p align="center">
 	<img src="https://raw.githubusercontent.com/jahirfiquitiva/IconShowcase/master/art/icon.png" width="144">
