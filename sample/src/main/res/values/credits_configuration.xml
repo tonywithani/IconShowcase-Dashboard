@@ -32,8 +32,8 @@
     </string-array>
 
     <string-array name="credits_titles">
+        <item>My Name</item>
         <item>Your Name</item>
-        <item>Another Name</item>
     </string-array>
 
     <string-array name="credits_contents">
@@ -42,13 +42,13 @@
     </string-array>
 
     <string-array name="credits_buttons">
-        <item>Google+|Instagram</item>
-        <item>Facebook|Website|Twitter</item>
+        <item>Sydney Morning Herald|OMG Ubuntu</item>
+        <item>Sydney Morning Herald|OMG Ubuntu</item>
     </string-array>
 
     <string-array name="credits_links">
-        <item>https://www.google.com/+JahirFiquitivaJDev|http://instagram.com/jahirfiquitiva</item>
-        <item>https://facebook.com/|https://www.jahirfiquitiva.me/|https://twitter.com/jahirfiquitiva</item>
+        <item>http://www.smh.com.au|http://www.omgubuntu.co.uk</item>
+        <item>http://www.smh.com.au|http://www.omgubuntu.co.uk</item>
     </string-array>
 
 </resources>
