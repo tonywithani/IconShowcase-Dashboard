@@ -33,7 +33,7 @@
         <intent
                 android:targetPackage="jahirfiquitiva.apps.iconshowcase.demo"
                 android:action="android.intent.action.VIEW"
-                android:targetClass="jahirfiquitiva.apps.iconshowcase.demo.HomeActivity"
+                android:targetClass="com.tonywithani.iconpack.HomeActivity"
                 android:data="request_shortcut"/>
         <categories android:name="android.shortcut.conversation"/>
     </shortcut>
@@ -48,7 +48,7 @@
         <intent
                 android:targetPackage="jahirfiquitiva.apps.iconshowcase.demo"
                 android:action="android.intent.action.VIEW"
-                android:targetClass="jahirfiquitiva.apps.iconshowcase.demo.HomeActivity"
+                android:targetClass="com.tonywithani.iconpack.HomeActivity"
                 android:data="wallpapers_shortcut"/>
         <categories android:name="android.shortcut.conversation"/>
     </shortcut>
@@ -63,7 +63,7 @@
         <intent
                 android:targetPackage="jahirfiquitiva.apps.iconshowcase.demo"
                 android:action="android.intent.action.VIEW"
-                android:targetClass="jahirfiquitiva.apps.iconshowcase.demo.ApplyShortcut"
+                android:targetClass="com.tonywithani.iconpack.ApplyShortcut"
                 android:data="apply_shortcut"/>
         <categories android:name="android.shortcut.conversation"/>
     </shortcut>
