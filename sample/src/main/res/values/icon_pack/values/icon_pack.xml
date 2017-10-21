@@ -39,10 +39,32 @@
     <!-- Make sure the tabs names are the same as the other arrays -->
     <string-array name="tabs">
         <item>latest</item>
-        <item>system</item>
-        <item>google_apps</item>
-        <item>games</item>
-        <item>drawers</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+<!--        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item> -->
     </string-array>
 
     <!-- LATEST ICONS -->
@@ -58,8 +80,48 @@
         <item>this_is_an_icon</item>
     </string-array>
 
+    <!-- A ICONS -->
+    <!-- Icons starting with A icons listed here -->
+    <string-array name="A">
+        <item>icn_001</item>
+        <item>icn_002</item>
+        <item>icn_003</item>
+        <item>icn_004</item>
+        <item>icn_005</item>
+    </string-array>
+
+    <!-- B ICONS -->
+    <!-- Icons starting with B icons listed here -->
+    <string-array name="B">
+        <item>icn_001</item>
+        <item>icn_002</item>
+        <item>icn_003</item>
+        <item>icn_004</item>
+        <item>icn_005</item>
+    </string-array>
+
+    <!-- C ICONS -->
+    <!-- Icons starting with C icons listed here -->
+    <string-array name="C">
+        <item>icn_001</item>
+        <item>icn_002</item>
+        <item>icn_003</item>
+        <item>icn_004</item>
+        <item>icn_005</item>
+    </string-array>
+
+    <!-- D ICONS -->
+    <!-- Icons starting with D icons listed here -->
+    <string-array name="D">
+        <item>icn_001</item>
+        <item>icn_002</item>
+        <item>icn_003</item>
+        <item>icn_004</item>
+        <item>icn_005</item>
+    </string-array>
+
     <!-- SYSTEM ICONS -->
-    <!-- System icons listed here -->
+    <!-- System icons listed here -- >
     <string-array name="system">
         <item>a_better_camera</item>
         <item>aa</item>
@@ -67,9 +129,10 @@
         <item>action_launcher</item>
         <item>adaway</item>
     </string-array>
+    -->
 
     <!-- GOOGLE APPS ICONS -->
-    <!-- Google Apps icons are listed here -->
+    <!-- Google Apps icons are listed here -- >
     <string-array name="google_apps">
         <item>an_icon</item>
         <item>andy</item>
@@ -80,9 +143,10 @@
         <item>second_icon</item>
         <item>this_is_an_icon</item>
     </string-array>
+    -->
 
     <!-- GAMES ICONS -->
-    <!-- Game icons are listed here -->
+    <!-- Game icons are listed here -- >
     <string-array name="games">
         <item>a_better_camera</item>
         <item>adaway</item>
@@ -100,6 +164,7 @@
         <item>second_icon</item>
         <item>this_is_an_icon</item>
     </string-array>
+    -->
 
     <string-array name="icon_pack">
         <item>a_better_camera</item>
